@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+科研Science
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid" id="ScienceID">
+        <div class="row col-md-12 " id ='toppicture'>
+            <img class = "img-responsive model-img" src="{% static 'img/science.jpg'%}">
+        </div>
+    </div>
+    <div class="container">
+            <div class="model-details-title">科研基地情况介绍</div>
+            <div class="model-details">
+                <p>
+                    进几十年来，技术发展日新月异，特别是各种高效开发语言的产生和新框架的诞生；让我们学习到很多非常有特色的开发思想；同时我们也面临很大的挑战，需要持续学习，不断进步才能永葆充沛竞争力。
+                    python是一门解释型语言，具有动态解析的特点，语法简介凝练。CSS通过background-position属性来调整背景图片的位置；
+                    比如，当希望背景图片显示在页面的右下角时，可以设置属性值为bottomright即可。
+                </p>
+                <img class = "img-responsive" src="{% static 'img/bobo.jpg'%}">
+                <h3>研究方向 </h3>
+                <h5>机器人导航:</h5>
+                <p>
+                    多传感器路径规划、物联网一体化平台、远程人机交互、强化学习控制....
+                </p>
+                <h5>人体行为识别:</h5>
+                <p>
+                    单用户行为识别、人体骨骼大数据分析、鲁棒特征抽取、多用户行为识别.
+                </p>
+                <h5>科研基地|人脸属性识别:</h5>
+                <p>
+                    人脸识别、属性分析、行人运动目标识别，再识别。。。
+                </p>
+            </div>
+        </div>
+
+
+{% endblock %}

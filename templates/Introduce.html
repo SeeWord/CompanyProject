@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+公司简介
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid" id="Introduce">
+        <div class="row col-md-8 " id ='toppicture'>
+            <img class = "img-responsive model-img" src="{% static 'img/science.jpg'%}">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-3 ">
+            <div class="col-md-3">
+                <div class="model-title">
+                    简单说明介绍
+                </div>
+                <div class="model-list">
+                    <ul class="list-group">
+                                    <li class="list-group-item" id="survey">
+                                        <a href="{% url 'IntroSpace:survey' %}">企业概况</a>
+                                    </li>
+                                    <li class="list-group-item" id="honor">
+                                        <a href="{% url 'IntroSpace:honor' %}">荣誉资质</a>
+                                    </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-9">
+            </div>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}

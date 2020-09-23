@@ -1,0 +1,108 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>衡水老白干</title>
+    <link href = "{% static 'css/bootstrap.css' %}" rel = "stylesheet">
+    <link href = "{% static 'css/style.css' %}" rel = "stylesheet">
+    <script src = "{% static 'js/jquery.min.js' %}"> </script>
+    <script src = "{% static 'js/bootstrap.min.js' %}"> </script>
+</head>
+<body>
+<div class="container top">
+        <div class="row">
+            <div class="col-sm-2 col-md-1 ">
+                <a>
+                    <img class="img-responsive" src="{% static 'img/logo.jpg'%}">
+                </a>
+            </div>
+            <div class="col-md-3 hidden-xs">
+                <a class="phone ant">
+                    <span class ="glyphicon glyphicon-phone">电话:18580524578</span>
+                </a>
+            </div>
+            <div class="col-md-3 hidden-xs">
+                <a class="mail ant">
+                    <span class ="glyphicon glyphicon-envelope"> 邮箱：haikun08210108@163.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default" role = "navigation">
+       <div class="container">
+            <!--<div class=" navbar-header ">
+                <button type="button" class=" navbar -toggle collapsed" data-toggle ="collapse" data-target="#bs-example" aria-expanded="false">
+                    <span>导航栏</span>
+                </button>
+            </div>-->
+           <div class="line"> </div>
+           <div class="collapse navbar-collapse" id="bs-example">
+               <ul class="nav navbar-nav" style=" width:100%;">
+                   <li class="nav-top active ">
+                       <a href="{% url 'home' %}">首页</a>
+                   </li>
+                        <li class="dropdown nav-top">
+                            <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">公司简介</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'IntroSpace:methods' %}">企业概况</a></li>
+                                <li><a href="{% url 'IntroSpace:methods' %}">荣誉资质</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown nav-top">
+                            <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">新闻动态</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'IntroSpace:methods' %}">企业要闻</a></li>
+                                <li><a href="{% url 'IntroSpace:methods' %}">行业新闻</a></li>
+                                <li><a href="{% url 'IntroSpace:methods' %}">通知公告</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav-top">
+                            <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">产品中心</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'IntroSpace:methods' %}">家用机器人</a></li>
+                                <li><a href="{% url 'IntroSpace:methods' %}">智能监控</a></li>
+                                <li><a href="{% url 'IntroSpace:methods' %}">人脸识别解决方案</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown nav-top">
+                            <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">服务支持</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'IntroSpace:methods' %}">资料下载</a></li>
+                                <li><a href="{% url 'IntroSpace:methods' %}">人脸识别开放平台</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-top">
+                                <a href="{% url 'Science:science' %}">科研基地</a>
+                        </li>
+                        <li class="dropdown nav-top">
+                            <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">招兵买码</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'IntroSpace:methods' %}">欢迎咨询</a></li>
+                                <li><a href="{% url 'IntroSpace:methods' %}">加入老油条</a></li>
+                            </ul>
+                        </li>
+               </ul>
+
+           </div>
+
+       </div>
+
+    </nav>
+    <script>
+        $(function(){
+                $(".dropdown").mouseover(function(){
+                    $(this).addClass("open");
+                });
+                $(".dropdown").mouseleave(function(){
+                    $(this).removeClass("open");
+                });
+        });
+    </script>
+
+</body>
+</html>

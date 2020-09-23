@@ -1,0 +1,52 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>衡水老白干|科研基地</title>
+    <link href = "{% static 'css/bootstrap.css' %}" rel = "stylesheet">
+    <link href = "{% static 'css/style.css' %}" rel = "stylesheet">
+    <script src = "{% static 'js/jquery.min.js' %}"> </script>
+    <script src = "{% static 'js/bootstrap.min.js' %}"> </script>
+</head>
+
+<body>
+    <div class="line"> </div>
+    <div class="container top">
+        <div class="row">
+            <div class="col-md-6">
+                <a>
+                    {% print('AAAAAAA' )%}
+                    <img class="img-responsive" src="% static 'img/logo.jpg'%">
+                    {% print('BBBBBBBBB' )%}
+                </a>
+            </div>
+            <div class="col-md-3 hidden-xs">
+                <a class="phone ant">
+                    <span class ="glyphicon glyphicon-phone">电话：18580524578</span>
+                </a>
+            </div>
+            <div class="col-md-3 hidden-xs">
+                <a class="mail ant">
+                    <span class ="glyphicon glyphicon-envelope">邮箱：haikun08210108@163.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+                $(".dropdown").mouseover(function(){
+                    $(this).addclass("open");
+                })
+                $(".dropdown").mouseleave(function(){
+                    $(this).removeclass("open");
+                })
+        });
+    </script>
+
+
+
+</body>
+</html>

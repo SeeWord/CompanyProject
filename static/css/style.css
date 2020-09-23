@@ -1,0 +1,206 @@
+.top{
+	margin-top:10px;
+}
+.phone{
+	color:#666;
+	position:absolute;/*用绝对值调整位置*/
+	right:-550px;
+	top:5px;
+}
+.mail{
+	color:#666;
+	position:absolute;/*用相对值调整位置*/
+	right:-620px;
+	top:5px;
+}
+.ant:link{
+	text-decoration:none;
+}
+.ant:visited{
+	text-decoration:none;
+}
+.ant:hover{
+	text-decoration:none;
+}
+.ant:active{
+	text-decoration:none;
+}
+/*导航条默认属性设置*/
+.navbar-default{
+	margin-bottom:0px;
+	border:0px;
+	background-color:#e7e7e7;
+	margin-top:25px;
+}
+/*导航栏栏目激活时属性*/
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:hover,
+.navbar-default .navbar-nav .active a:focus{
+	background-color:#6495ed;	/*背景色设置为深蓝色*/
+	color:#fff;	/*前景文字颜色设置为白色*/
+}
+/*一级菜单光标移过时属性*/
+.navbar-default .navbar-nav li a:hover{
+	color:#fff;
+	background-color:#6495ed;
+}
+/*一级菜单单击展开时属性*/
+.navbar-default .navbar-nav li.open a.on{
+	color:#fff;
+	background-color:#6495ed;
+}
+/*下拉菜单内边距*/
+.dropdown-menu{
+	padding:0px;
+	min-width:100%;
+}
+/*二级菜单标签属性*/
+.dropdown-menu li a{
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#777;
+	text-align:center;
+}
+/*二级菜单光标移过时属性*/
+.navbar-default .navbar-nav li ul a:hover{
+	color:#fff;
+	background-color:#005197;
+}
+/*一级菜单激活时，二级菜单鼠标移过的属性*/
+.navbar-default .navbar-nav li.active ul a:hover{
+	color:#fff;
+	background-color:#6495ed;
+}
+/*二级菜单标签属性*/
+.nav-top{
+	width:14%;
+	text-align:center;
+	
+}
+.line{
+	height:3px;
+	background:#005197;
+	
+}
+.model-details-title{
+	padding:15px 0px;
+	font-size:18px;
+	border-bottom:1px #005197 solid;
+	color:#005197;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.model-details img{
+	margin:0px auto;
+}
+.model-details p{
+	line-height:30px;
+	text-indent:2em;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+.web-footer{
+	width:100%;
+	margin-top:30px;
+}
+.row-3{
+	margin-top:30px;
+}
+.model-title{
+	text-align:center;
+	color:#fff;
+	font-size:22px;
+	padding:15px 0px;
+	background-color:#005197;
+	margin-top:25px;
+}
+.model-title li{
+	text-align:center;
+	color:#fff;
+	background-color:#f6f6f6;
+	margin-top:16px;
+}
+.model-list li a{
+	color:#545353;
+}
+.model-list li a:hover{
+	text-decoration:none;
+	color:#6495ed;
+}
+.model-list li.active{
+	text-align:center;
+	background-color:#f6f6f6;
+	font-size:16px;
+	border-color:#ddd;
+}
+.model-list li.active:hover{
+	text-align:center;
+	background-color:#f6f6f6;
+	font-size:16px;
+	border-color:#ddd;
+}
+.model-list li.active a{
+	color:#005197;
+}
+
+
+#map-footer{
+	background-color:#3A3A3A;
+	
+}
+#map-footer dl{
+	text-align:center;
+	margin-top:40px;
+}
+#map-footer dt{
+	padding:3px;
+	color:#fff;
+}
+#map-footer dd{
+	padding:3px;
+}
+#map-footer p{
+	margin-top:20px;
+	margin-bottom:10px;
+	color:#fff;
+	font-size:16px;
+}
+#map-footer a{
+	color:#A6A6A6;
+	font-size:13px;
+}
+#map-footer a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+#wx{
+	text-align:center;
+}
+.qrimg{
+	max-width:100px;
+}
+.patent-footer{
+	width:100%;
+	margin-top:20px;
+	background-color:#005197;
+	text-align: center;
+}
+#patent-footer{
+	text-align:center;
+	
+}
+#toppicture{
+	width:100%;
+	top:20px;
+	text-align:center;
+	position:relative;
+	left:200px ;
+}
+
+
+
+
+
+
+
+
