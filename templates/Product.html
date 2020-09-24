@@ -1,0 +1,48 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %}
+产品介绍
+{% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid" id="Products">
+        <div class="row col-md-12 " id ='toppicture'>
+            <img class = "img-responsive model-img" src="{% static 'img/science.jpg'%}">
+        </div>
+    </div>
+    <div class="container">
+            <div class="row row-3">
+                <div class="col-md-3">
+                    <div class="model-title">
+                        产品中心
+                    </div>
+                    <div class="model-list">
+                        <ul class="list-group">
+                            <li class="list-group-item" id="robot">
+                                <a href="{ % url 'Product:ProductView''robot'%}">智能机器人</a>
+                            </li>
+                            <li class="list-group-item" id="monitor">
+                                <a href="{ % url 'Product:ProductView''monitor'%}">智能监控</a>
+                            </li>
+                            <li class="list-group-item" id="faceMg">
+                                <a href="{ % url 'Product:ProductView''faceMg'%}">人脸识别</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="model-details-title">
+                        产品详细介绍{{productName}}
+                    </div>
+
+                    <div class="model-details">
+                        产品详细
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+{% endblock %}

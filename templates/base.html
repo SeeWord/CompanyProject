@@ -41,38 +41,36 @@
                        <li class="nav-top active ">
                            <a href="{% url 'home' %}">首页</a>
                        </li>
-                       <script type="text/JavaScript">
-                           $('#{{active_menu}}').addClass("active");
-                       </script>
+
                             <li class="dropdown nav-top">
                                 <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">公司简介</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{% url 'IntroSpace:methods' %}">企业概况</a></li>
-                                    <li><a href="{% url 'IntroSpace:methods' %}">荣誉资质</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">企业概况</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">荣誉资质</a></li>
                                 </ul>
 
                             </li>
                             <li class="dropdown nav-top">
                                 <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">新闻动态</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{% url 'IntroSpace:methods' %}">企业要闻</a></li>
-                                    <li><a href="{% url 'IntroSpace:methods' %}">行业新闻</a></li>
-                                    <li><a href="{% url 'IntroSpace:methods' %}">通知公告</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">企业要闻</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">行业新闻</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">通知公告</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown nav-top">
                                 <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">产品中心</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{% url 'IntroSpace:methods' %}">家用机器人</a></li>
-                                    <li><a href="{% url 'IntroSpace:methods' %}">智能监控</a></li>
-                                    <li><a href="{% url 'IntroSpace:methods' %}">人脸识别解决方案</a></li>
+                                    <li><a href="{% url 'ProSpace:ProductView' %}">家用机器人</a></li>
+                                    <li><a href="{% url 'ProSpace:ProductView' %}">智能监控</a></li>
+                                    <li><a href="{% url 'ProSpace:ProductView' %}">人脸识别解决方案</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown nav-top">
                                 <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">服务支持</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{% url 'IntroSpace:methods' %}">资料下载</a></li>
-                                    <li><a href="{% url 'IntroSpace:methods' %}">人脸识别开放平台</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">资料下载</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">人脸识别开放平台</a></li>
                                 </ul>
                             </li>
 
@@ -83,8 +81,8 @@
                             <li class="dropdown nav-top">
                                 <a herf="#" class="dropdown-toggle on" data-toggle="dropdown">招兵买码</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{% url 'IntroSpace:methods' %}">欢迎咨询</a></li>
-                                    <li><a href="{% url 'IntroSpace:methods' %}">加入老油条</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">欢迎咨询</a></li>
+                                    <li><a href="{% url 'IntroSpace:IntroduceView' %}">加入老油条</a></li>
                                 </ul>
                             </li>
                    </ul>
@@ -101,31 +99,31 @@
             <div class="col-md-2">
                 <dl>
                     <dt> 公司简介</dt>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">企业概要</a> </dd>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">荣誉资质</a> </dd>
+                    <dd><a href="{% url 'IntroSpace:IntroduceView' %}">企业概要</a> </dd>
+                    <dd><a href="{% url 'IntroSpace:IntroduceView' %}">荣誉资质</a> </dd>
                 </dl>
             </div>
             <div class="col-md-2">
                 <dl>
                     <dt> 产品中心</dt>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">家用机器人</a> </dd>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">智能监控</a> </dd>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">人脸识别解决方案</a> </dd>
+                    <dd><a href="{% url 'ProSpace:ProductView' %}">家用机器人</a> </dd>
+                    <dd><a href="{% url 'ProSpace:ProductView' %}">智能监控</a> </dd>
+                    <dd><a href="{% url 'ProSpace:ProductView' %}">人脸识别解决方案</a> </dd>
                 </dl>
             </div>
             <div class="col-md-2">
                 <dl>
                     <dt>服务支持</dt>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">资料下载</a> </dd>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">企业要闻</a></dd>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">人脸识别开放平台</a> </dd>
+                    <dd><a href="{% url 'IntroSpace:IntroduceView' %}">资料下载</a> </dd>
+                    <dd><a href="{% url 'IntroSpace:IntroduceView' %}">企业要闻</a></dd>
+                    <dd><a href="{% url 'IntroSpace:IntroduceView' %}">人脸识别开放平台</a> </dd>
                 </dl>
             </div>
             <div class="col-md-2">
                 <dl>
                     <dt>人才招聘</dt>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">欢迎咨询</a> </dd>
-                    <dd><a href="{% url 'IntroSpace:methods' %}">加入我们</a> </dd>
+                    <dd><a href="{% url 'IntroSpace:IntroduceView' %}">欢迎咨询</a> </dd>
+                    <dd><a href="{% url 'IntroSpace:IntroduceView' %}">加入我们</a> </dd>
                 </dl>
             </div>
             <div class="col-md-4" id="wx">
@@ -152,9 +150,12 @@
         });
     </script>
 
-        <script type="text/JavaScript">
+    <script type="text/JavaScript">
             $('#{{sub_menu}}').addClass("active");
-        </script>
+    </script>
+    <script type="text/JavaScript">
+            $('#{{active_menu}}').addClass("active");
+    </script>
 
 </body>
 </html>

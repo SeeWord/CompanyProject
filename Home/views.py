@@ -8,4 +8,4 @@ class Home(View):
     TEMPALTES = 'home.html'
 
     def get(self, request):
-        return render(request, self.TEMPALTES)
+        return render(request, self.TEMPALTES,{'active_menu':'home', })

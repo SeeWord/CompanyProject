@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.views import View
 
 
-class Introduce(View):
+class IntroView(View):
     TEMPALTES = 'Introduce.html'
 
     def survey(self, request):
@@ -12,5 +12,3 @@ class Introduce(View):
 
     def honor(self, request):
         return render(request, self.TEMPALTES, {'active_menu': 'Introduce', 'sub_menu': 'honor'})
-    def nots(self):
-        pass

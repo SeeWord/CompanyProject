@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
-from .views import Introduce
+from .views import IntroView
 
 urlpatterns = [
-    path('Introduce', Introduce.as_view(), name='methods'),
+    path('IntroView', IntroView.as_view(), name='IntroduceView'),
 ]
