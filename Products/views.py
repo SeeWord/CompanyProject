@@ -20,6 +20,7 @@ class ProductList(View):
     #         productName == '人脸识别'
     #     else:
     #         productName == 'blank'
+    #     productList = ProductList.objects.fliter(productType=productName).order_by('-publishDate')
     #     return render(request, self.TEMPALTES,
     #                   {'active_menu': 'products',
     #                    'sub_menu': submenu,
