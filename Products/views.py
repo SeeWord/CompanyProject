@@ -10,21 +10,21 @@ class ProductList(View):
     def get(self, request):
         return render(request, self.TEMPALTES, {'active_menu': 'Product', })
 
-    # def products(self,request,productName):
-    #     submenu = productName
-    #     if productName == 'robot':
-    #         productName == '智能家用机器人'
-    #     elif productName == 'monitor':
-    #         productName == '智能监控'
-    #     elif productName == 'faceMg':
-    #         productName == '人脸识别'
-    #     else:
-    #         productName == 'blank'
-    #     productList = ProductList.objects.fliter(productType=productName).order_by('-publishDate')
-    #     return render(request, self.TEMPALTES,
-    #                   {'active_menu': 'products',
-    #                    'sub_menu': submenu,
-    #                    'productName': productName, })
+    def products(self,request,productName):
+        submenu = productName
+        if productName == 'robot':
+            productName == '智能家用机器人'
+        elif productName == 'monitor':
+            productName == '智能监控'
+        elif productName == 'faceMg':
+            productName == '人脸识别'
+        else:
+            productName == 'blank'
+        productList = ProductList.objects.fliter(productType=productName).order_by('-publishDate')
+        return render(request, self.TEMPALTES,
+                      {'active_menu': 'products',
+                       'sub_menu': submenu,
+                       'productName': productName, })
 
     def product(self, request, product_id):
         a = {'robot': '智能家用机器人', 'monitor': '智能监控', 'faceMg': '人脸识别', }
