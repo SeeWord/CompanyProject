@@ -20,13 +20,13 @@
                     <div class="model-list">
                         <ul class="list-group">
                             <li class="list-group-item" id="robot">
-                                <a href="{ % url 'Product:ProductView''robot'%}">智能机器人</a>
+                                <a href="{ % url 'Products:ProductView''robot'%}">智能机器人</a>
                             </li>
                             <li class="list-group-item" id="monitor">
-                                <a href="{ % url 'Product:ProductView''monitor'%}">智能监控</a>
+                                <a href="{ % url 'Products:ProductView''monitor'%}">智能监控</a>
                             </li>
                             <li class="list-group-item" id="faceMg">
-                                <a href="{ % url 'Product:ProductView''faceMg'%}">人脸识别</a>
+                                <a href="{ % url 'Products:ProductView''faceMg'%}">人脸识别</a>
                             </li>
                         </ul>
                     </div>
@@ -38,10 +38,32 @@
 
                     <div class="model-details">
                         产品详细
+                        {% for product in productList%}
+                            <div class="row">
+                                <div class="col-md-6">
+                                    {% for img in product.ProductImg.all %}
+                                        {% if forloop.first %}
+                                           <a>
+                                                <img class="img-responsive" src ="{{img.photo.url}}">
+                                           </a>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>{{product.title|truncatechars:"20"}}</h3>
+                                    <p>{{product.description|truncatechars:"150"}}  </p>
+                                    <div class="thumbnail row-5">
+                                        <div class="caption">
+                                            <a href="#" class="btn btn-primary" role="button">查看详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor%}
                     </div>
+
                 </div>
             </div>
-
     </div>
 
 
