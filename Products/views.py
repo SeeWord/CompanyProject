@@ -1,29 +1,30 @@
 # coding:utf-8
-from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
-from django.core.handlers.wsgi import WSGIRequest
-from Products.models import Product
+from .models import Product
 
 
-class ProductList(View):
+class ProductBase(View):
     TEMPALTES = 'Product.html'
 
     def get(self, request):
         return render(request, self.TEMPALTES, {'active_menu': 'Product', })
 
-    def post(self, request, *args):
+
+class ProductList(View):
+    TEMPALTES = 'Product.html'
+
+    def post(self, request, productName):
         submenu = ''
-        productName = ''
         if self.request.method == 'POST':
-            if args == 'robot':
-                productName == '智能家用机器人'
-            elif args == 'monitor':
-                productName == '智能监控'
-            elif args == 'faceMg':
-                productName == '人脸识别'
+            if productName == 'robot':
+                productName = '智能家用机器人'
+            elif productName == 'monitor':
+                productName = '智能监控'
+            elif productName == 'faceMg':
+                productName = '人脸识别'
             else:
-                productName == 'blank'
+                productName = 'blank'
         productList = Product.objects.filter(producttype=productName).order_by('-publishdate')
 
         return render(request, self.TEMPALTES,
@@ -39,7 +40,7 @@ class ProductList(View):
                 product_name = values
             else:
                 product_name = 'blank'
-        productList = ProductList.objects.fliter(productType=product_name).order_by('-publishDate')
+        productList = Product.objects.filter(producttype=product_name).order_by('-publishdate')
         return render(request, self.TEMPALTES,
                       {'active_menu': 'products',
                        'sub_menu': submenu, 'productName': product_name, 'productList': productList, })

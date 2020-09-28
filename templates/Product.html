@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-
+    <link href = "{% static 'css/product.css' %}" rel = "stylesheet">
     <div class="container-fluid" id="Products">
         <div class="row col-md-12 " id ='toppicture'>
             <img class = "img-responsive model-img" src="{% static 'img/science.jpg'%}">
@@ -17,16 +17,16 @@
                     <div class="model-title">
                         产品中心
                     </div>
-                    <div class="model-list">
+                    <div class="model-list" method="POST">
                         <ul class="list-group">
                             <li class="list-group-item" id="robot">
-                                <a href="{ % url 'Products:ProductView''robot'%}">智能机器人</a>
+                                <a href="{% url 'ProSpace:robot' %}">智能机器人</a>
                             </li>
                             <li class="list-group-item" id="monitor">
-                                <a href="{ % url 'Products:ProductView''monitor'%}">智能监控</a>
+                                <a href="{% url 'ProSpace:monitor' %}">智能监控</a>
                             </li>
                             <li class="list-group-item" id="faceMg">
-                                <a href="{ % url 'Products:ProductView''faceMg'%}">人脸识别</a>
+                                <a href="{% url 'ProSpace:faceMg' %}">人脸识别</a>
                             </li>
                         </ul>
                     </div>
